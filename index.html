@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rifa Da Lidiane</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>💙RIFA SOLIDARIA💙</h1>
+      <p>
+        ✨Um gesto de solidariedade pode transformar uma vida.✨</p>
+      </p> 🤝Cada número é uma demonstração de amor, força e esperança!🙏</p>
+      
+      <p>Sorteio: 22 de dezembro de 2026</p>
+    </header>
+
+    <div class="info">
+      Prêmio: Uma camisa autografada do Cruzeiro 💙! 🎁 · Cada número custa <b>R$ 10,00</b> · 300 números disponíveis.<br>
+      Escolha os seus abaixo, digite seu nome e WhatsApp, aceite o uso dos dados e clique em Reservar.<br>
+      Chave Pix (CPF) para pagamento: <b>017.338.396-31</b>
+    </div>
+
+    <details class="privacy">
+      <summary>🔒 Aviso de Privacidade (LGPD)</summary>
+      <p><b>Quem cuida dos dados:</b> Lidiane dos Santos Cruz, organizador(a) desta rifa. Contato: (31) 9 9177-1837 <a id="privacyContact"
+          href="#" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      <p><b>Dados coletados:</b> seu nome, seu número de WhatsApp e os números escolhidos.</p>
+      <p><b>Para que usamos:</b> somente para registrar sua reserva, confirmar o pagamento e avisar você sobre o sorteio
+        e a entrega do prêmio.</p>
+      <p><b>Base legal:</b> seu consentimento (art. 7º, I, da Lei 13.709/2018).</p>
+      <p><b>Quem vê:</b> apenas o organizador. Os demais participantes veem somente que o número está “Reservado”, sem
+        nome nem telefone. Os dados ficam armazenados em planilha do Google (Google Sheets), que atua como operador do
+        armazenamento.</p>
+      <p><b>Por quanto tempo:</b> nome e telefone são apagados até 30 dias após o sorteio. Não vendemos nem
+        compartilhamos seus dados com terceiros.</p>
+      <p><b>Seus direitos:</b> você pode pedir acesso, correção, exclusão dos dados ou revogar o consentimento a
+        qualquer momento, falando com o organizador pelo contato acima.</p>
+    </details>
+
+    <div class="status-line">
+      <span id="statusText">Carregando números...</span>
+      <button id="refreshBtn" type="button">🔄 Atualizar</button>
+    </div>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--card);border:2px solid var(--savana);"></i>Disponível</span>
+      <span><i class="dot" style="background:var(--leaf);"></i>Selecionado</span>
+      <span><i class="dot" style="background:var(--taken);"></i>Reservado</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="footer-bar">
+    <span><b id="selCount">0</b> número(s) · <b id="selTotal">R$ 0,00</b></span>
+    <input id="buyerName" placeholder="Seu nome" maxlength="80" autocomplete="name">
+    <input id="buyerPhone" placeholder="Seu WhatsApp (com DDD)" inputmode="tel" maxlength="20" autocomplete="tel">
+    <label class="consent">
+      <input type="checkbox" id="consent">
+      <span>Li o Aviso de Privacidade e concordo com o uso do meu nome e WhatsApp para esta rifa.</span>
+    </label>
+    <button id="reservarBtn" type="button" disabled>Reservar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
