@@ -2,7 +2,7 @@
 // COLE AQUI a URL do seu Apps Script (termina em /exec), depois
 // de publicar o Google Sheets como banco de dados.
 // ==========================================================
-var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyj1_Om3vbV8KSaqswf3wAlyt6CXI6kql7hTQU8EA4_VBx44GfhwwABDPZqn4AlqUQoNw/exec";
+var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz9ZprASgr91oS-tTTc5P5hWRrF9Q6LsBUMlMCaZVkUye28C3Wj-2RXlFWpdXiSJjSwgg/exec";
 
 var WHATSAPP = "31991771837";
 var PIX = "017.338.396-31"; // chave Pix (CPF)
